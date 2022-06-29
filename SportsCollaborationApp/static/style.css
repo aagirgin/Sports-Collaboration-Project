@@ -1,0 +1,335 @@
+.logbox {
+  width: 380px;
+  height: 480px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  border: 1px solid silver;
+  background-color: white;
+}
+
+.logbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.logbox input {
+  width: 60%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  font-family: monospace;
+  text-indent: 5px;
+}
+
+.logbox input[type="submit"] {
+  width: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 77px;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: blue;
+  text-decoration: underline;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+.logbox button[type="submit"] {
+  width: 35%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --primary-color: rgba(0, 0, 0, 0.836);
+  --primary-color2: rgba(0, 0, 0, 0.548);
+  --title-color: #141313;
+  --text-color: #a7a3a3;
+  --border-color: #201f1f17;
+  --gradient-color: linear-gradient(90deg, #303035 0%, #4c4853 100%);
+  --shadow-color:  0px 10px 30px rgba(38, 37, 41, 0.3);
+  --box-shadow: 0px 10px 30px rgba(37, 36, 39, 0.205);
+  --roboto: 'Roboto', cursive;
+}
+
+#regpg {
+  width: 100%;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.418);
+}
+
+#regpg .title {
+  position: relative;
+  font: var(--roboto);
+  font-size: 25px;
+  font-weight: 800;
+
+}
+
+#regpg .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 10px;
+  border-radius: 5px;
+  background: grey;
+}
+
+.content form .input-form {
+  margin-top: 2%;
+}
+
+form .input-form .two-box .input-box {
+  padding-bottom: 7.5%;
+  width: fit-content;
+}
+
+form .input-box span.details {
+  display: block;
+}
+
+.input-form .two-box .input-box input, .input-form .two-box .input-box select {
+  height: 45px;
+  width: 25vw;
+  outline: none;
+  font: var(--roboto);
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.input-form .input-box input:focus, .input-form .input-box input:valid {
+  border-color: grey;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+.button input {
+  height: 100%;
+  width: 35%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font:var(--roboto);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.39);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form .button input:hover {
+  background: rgba(0, 0, 0, 0.87);
+}
+
+.input-form .two-box .input-box input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.card-container {
+  background-color: rgba(128, 128, 128);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 2.5vw;
+  margin-right: 2.55vw;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  color: #B3B8CD;
+  padding-top: 15px;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+}
+
+.card-without-tags {
+  padding-left: 15px;
+}
+
+.card-container .tutor {
+  color: #231E39;
+  background-color: #FEBB0B;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 50%;
+  padding: 7px;
+  width: 200px;
+  height: 200px;
+}
+
+button.players {
+  background-color:rgba(27, 26, 26, 0);
+  border: 1px solid #e6ecec;
+  border-radius: 3px;
+  color: #231E39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.tags {
+  background-color: #1F1A36;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tags ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags ul li {
+  border: 1px solid #2D2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 7px;
+  padding: 7px;
+}
+
+.container.posts-content {
+  padding-top: 20px;    
+}
+
+img {
+  border: 2px solid rgb(88, 88, 88);
+  border-radius: 8px;
+  width: 100px;
+}
+
+button.join {
+  background-color:rgba(113, 50, 143, 0)!important;;
+  border: 1px solid #e6ecec;
+  border-radius: 3px;
+  color: #231E39!important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 10px;
+  margin-left: -0.5vw;
+}
+
+.card-footer, .card hr {
+  border-color: rgba(24,28,33,0.06);
+}
+
+.card-tutor {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(32, 32, 138);
+  border-width: 2px;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  width: 100%;
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.c-details span {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 10px
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px
+}
+
+.tutor-badge span {
+  background-color: rgb(32, 32, 138);
+  opacity: 0.8;
+  width: 60px;
+  height: 45px;
+  border-radius: 5px;
+  display: flex;
+  color: gold;
+  justify-content: center;
+  align-items: center
+}
+
+.progress {
+  height: 15px;
+  border-radius: 12px
+}
+
+.progress div {
+  background-color: rgb(32, 32, 138);
+}
+
+.text1 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+}
+
+.text2 {
+  color: #8fa1c4
+}
+
+button.join2 {
+  background-color: rgba(113, 50, 143, 0)!important;;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: #231E39!important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 5px;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}

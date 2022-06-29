@@ -1,0 +1,83 @@
+{% load static %}
+
+{% block settings %}
+
+<div style="min-height: 84vh; background-size: cover; background-image: url({% static 'img/profile_bg.jpg' %});">
+  <div style="padding-top: 2vh;"></div>
+  <hr style="height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); margin: 0;">
+  <p style="font-size: 22px; text-align: center; margin: 0; color: #ccc;">Settings</p>
+  <hr style="height: 12px; border: 0; box-shadow: inset 0 -12px 12px -12px rgba(0, 0, 0, 0.5); margin: 0;">
+  <div class="container" style="margin-left: auto; margin-right: auto;">
+    <div class="mid-box" style="padding-top: 2vh; margin-left: auto; margin-right: auto;">
+      <form action="" method="POST"> {% csrf_token %}
+        <div class="form-row">
+          <div class="form-group col-2"></div>
+          <div class="form-group col-4">
+            <label class="ml-1" for="firstname" style="color: #ccc;">First Name</label>
+            <input class="form-control" id="firstname" placeholder="{{firstname}}" disabled>
+          </div>
+          <div class="form-group col-4">
+            <label class="ml-1" for="lastname" style="color: #ccc;">Last Name</label>
+            <input class="form-control" id="lastname" placeholder="{{lastname}}" disabled>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-2"></div>
+          <div class="form-group col-4">
+            <label class="ml-1" for="location" style="color: #ccc;">Location</label>
+            <input class="form-control" name="location" placeholder="{{siteUser.location}}">
+          </div>
+          <div class="form-group col-4">
+            <label class="ml-1" for="age" style="color: #ccc;">Age</label>
+            <input class="form-control" type="number" name="age" placeholder="{{siteUser.age}}">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4" style="margin-top: 2%;"></div>
+          <div class="form-group col-4" style="margin-top: 2%;">
+            <div class="row justify-content-center">
+              <div class="col">
+                <button class="btn btn-secondary btn-block text-decoration-none" type="submit">
+                  Apply Changes
+                </button>
+              </div>
+            </div>         
+          </div>
+        </div>
+      </form>
+      <div class="form-row">
+        <div class="form-group col-4" style="margin-top: 2%;"></div>
+        <div class="form-group col-4" style="margin-top: 2%;">
+          <div class="row justify-content-center">
+            <div class="col">
+              <button type="button" class="btn btn-secondary btn-block text-decoration-none" onclick="location.href='{% url "change_password" %}'">
+                Change Your Password
+              </button>
+            </div>
+          </div>              
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-4" style="margin-top: 2%;"></div>
+        <div class="form-group col-4" style="margin-top: 2%;">
+          <div class="row justify-content-center">
+            <div class="col">
+              <button type="button" class="btn btn-secondary btn-block text-decoration-none" onclick="location.href='{% url "freeze_account" %}'">
+                Freeze Account
+              </button>
+            </div>
+          </div>              
+        </div>
+      </div>
+      <div style="width: 25vw; height: 5vh; margin: auto;">
+        {% if messages %}
+          {% for message in messages %}
+            <div class="text-center" style="color: red">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock settings %}
